@@ -24,7 +24,7 @@ class EmotionDetector(VideoTransformerBase):
         try:
             # Analizza solo se è passato l'intervallo di tempo
             if current_time - self.last_analysis_time > self.analysis_interval:
-                result = DeepFace.analyze(img_path=img, actions=['emotion'], enforce_detection=False)
+                result = DeepFace.analyze(img_path=img, actions=['emotion'], enforce_detection=False, detector_backend='opencv')
                 dominant_emotion = result[0]['dominant_emotion']
 
                 # Aggiungi al buffer e aggiorna la media mobile
