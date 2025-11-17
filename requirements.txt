@@ -6,3 +6,4 @@ tensorflow==2.15.0
 keras==2.15.0
 numpy<2
 opencv-python-headless
+mtcnn==0.1.0
