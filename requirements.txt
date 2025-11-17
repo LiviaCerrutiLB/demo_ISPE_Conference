@@ -1,5 +1,8 @@
 streamlit==1.46.1
 streamlit_webrtc==0.63.5
-tensorflow==2.20.0
-keras==3.11.3
-deepface==0.0.95
+
+deepface==0.0.93
+tensorflow==2.15.0
+keras==2.15.0
+numpy<2
+opencv-python-headless
